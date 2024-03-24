@@ -15,12 +15,13 @@ class Config(object):
     # set this value with your name
     ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
     # Get the values for following 2 from my.telegram.org
-    APP_ID = int(os.environ.get("APP_ID", 6))
-    API_HASH = os.environ.get("API_HASH") or None
+    APP_ID = int(os.environ.get("APP_ID", 1733305))
+    API_HASH = "f423cffca6b5b7247b31b5b0df61f48d"
     # Datbase url heroku sets it automatically else get this from elephantsql
-    DB_URI = os.environ.get("DATABASE_URL", None)
+    DB_URI = os.environ.get("DATABASE_URL", "postgres://jhuxnzom:jx3U5CUb6f8WpCFFD3ZKcYYiSF0-XjVV@hansken.db.elephantsql.com/jhuxnzom")
     # Get this value by running python3 stringsetup.py or https://repl.it/@sandeep1709/generatestringsession
-    STRING_SESSION = os.environ.get("STRING_SESSION", None)
+    STRING_SESSION = "1BVtsOJwBu7UclP-9W2sX4AS-f6ScLTyXHZtryZrLx866qvHhGmntg9Lvf12XCvx9QjzLxMnUmn7eSbkDwcFXdf28XQsIdm49F4tYPQA7MfES0gdtJI3FMPHSVpXbinPGvmkb5a_Thos-BMxmu7Xq0J9MhHJa0qYYCLRpvEq7gBRhfNUD9s_mRmKVgyJetT4rILAt48ezVAaBx6GLm3OtC7YRpEVrHlcHmlpIw1yQuVkskcCX2juOQbn3SDMzDJF0SZnVzker8N8owLMUr0brz0w9Hf0rJsIRhGblbhDTwDcnq4bMRda8_b6XqjSD1eUaaE_6KfEVgdDkqk9qFjo16ZYvdREb0V4="
+
     # Telegram BOT Token and bot username from @BotFather
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN") or os.environ.get(
         "TG_BOT_TOKEN_BF_HER", None
@@ -122,7 +123,7 @@ class Config(object):
     # For transfer channel 2 step verification code of telegram
     TG_2STEP_VERIFICATION_CODE = os.environ.get("TG_2STEP_VERIFICATION_CODE", None)
     # JustWatch Country for watch plugin
-    WATCH_COUNTRY = os.environ.get("WATCH_COUNTRY", "IN")
+    WATCH_COUNTRY = os.environ.get("WATCH_COUNTRY", "LK")
     # Last.fm plugin  https://graph.org/Guide-for-LASTFM-02-03
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
     LASTFM_API = os.environ.get("LASTFM_API", None)
